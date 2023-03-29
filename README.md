@@ -1,2 +1,11 @@
 # hyu1999.github.io
-A web page to show the rusult of our image fusion algorithm
+- Title: Image Fusion Method Based on Convolutional Sparse Representation and Fractional Order Differentiation in Wavelet Domain
+- 2023 Wolf Prize Laureate of Math were announced: **Ingrid Daubechies**
+    - First **Female** Wolf Prize Winner
+    - She is best known for her work with **wavelet theory** in image processing.
+    - **Discrete wavelet transform** wil be the first step of our alg.
+- Process
+    - DWT
+    - Low freqency subband →  ****Fractional Calculus → fusion****
+    - High freqency subband →  ****Convolutional Sparse Representation → fusion****
+    - IDWT
