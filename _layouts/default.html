@@ -48,18 +48,18 @@
               <h1>
                 Haonan Yu
               </h1>
-              <p>I am a incoming PhD student at the <a href="https://www.ri.cmu.edu/">CLC Energy</a>, part of the <a href="https://energy.csu.edu.cn/">School of Energy Science and Engineering</a> at <a href="https://en.csu.edu.cn/">Central South University, China</a>, where I work on Density Functional Theory and ML for Catalysis. My PhD advisor is <a href="https://faculty.csu.edu.cn/sunzhiqiang/en/index.htm">Zhiqiang Sun</a> and <a href="https://faculty.csu.edu.cn/liuhanzi/en/index.htm">Hanzi Liu</a>.
+              <p>I am a incoming PhD student at the <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkxNDQ5MzM4MQ==&scene=124#wechat_redirect">Center of Clean and Low Carbon Energy</a>, part of the <a href="https://energy.csu.edu.cn/">School of Energy Science and Engineering</a> at <a href="https://en.csu.edu.cn/">Central South University, China</a>, where I work on Density Functional Theory and ML for Catalysis. My PhD advisor is <a href="https://faculty.csu.edu.cn/sunzhiqiang/en/index.htm">Zhiqiang Sun</a> and <a href="https://faculty.csu.edu.cn/liuhanzi/en/index.htm">Hanzi Liu</a>.
               </p>
               <p>
                 I have an MS in Computer Science (AI focus) from <a href="https://www.uow.edu.au">University of Wollongong</a> and a BS in Computer Science from <a href="https://www.hlju.edu.cn/">Heilongjiang University</a>.
               </p>
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/GpgXfyYN"> Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/hn-yu">GitHub</a> ;
+                <a href="https://github.com/hn-yu">GitHub</a>;
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/circle_bw_crop.jpg">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/mysterious_silhouette.jpg">
             </td>
           </tr>
         </table>
@@ -69,7 +69,7 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm interested in computer vision, machine learning, optimization, graphics and robotics.
+                I'm interested in density funcitnal theory, machine learning, optimization for molecules.
               </p>
             </td>
           </tr>
@@ -111,73 +111,6 @@
               {% endif %}
               {% if post.youtube %}
               <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
