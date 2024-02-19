@@ -12,13 +12,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
-  <style>
-    .mol-container {
-      width:    200px;
-      height:   200px;
-      position: relative;
-    }
-    </style>
+
 </head>
 
 <body>
@@ -54,6 +48,24 @@
               <h2>Research</h2>
               <p>
                 I'm interested in density functional theory, representation learning and optimization.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <p id="container-01" class="mol-container">
+                <script>
+                  $(function() {
+                    let element = $('#container-01');
+                    let config = { backgroundColor : 'white' };
+                    let viewer = $3Dmol.createViewer( element, config );
+                    viewer.addModel("3\n\nC 0 0 0\nO 1.16 0 0\nO -1.16 0 0", "xyz");
+                    viewer.addUnitCell();
+                    viewer.setStyle({}, {sphere : {}});
+                    viewer.zoomTo();
+                    viewer.render();
+                  });
+                </script>
               </p>
             </td>
           </tr>
@@ -104,20 +116,7 @@
           {% endfor %}
           {% endfor %}
         </table> -->
-
-        <p id="container-01" class="mol-container"></p>
-        <script>
-          $(function() {
-            let element = $('#container-01');
-            let config = { backgroundColor : 'white' };
-            let viewer = $3Dmol.createViewer( element, config );
-            viewer.addModel("3\n\nC 0 0 0\nO 1.16 0 0\nO -1.16 0 0", "xyz");
-            viewer.addUnitCell();
-            viewer.setStyle({}, {sphere : {}});
-            viewer.zoomTo();
-            viewer.render();
-          });
-          </script>
+        
         <br>
         <br>
         <br>
