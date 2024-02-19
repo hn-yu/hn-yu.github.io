@@ -51,22 +51,25 @@
               </p>
             </td>
           </tr>
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <div style="position: relative; width: 50%; height: 200px; display: flex; justify-content: center; align-items: center;" id="container-01" class="mol-container">
+                <script>
+                  $(function() {
+                    let element = $('#container-01');
+                    let config = { backgroundColor : '#FFFFE0' };
+                    let viewer = $3Dmol.createViewer( element, config );
+                    viewer.addModel("3\n\nC 0 0 0\nO 1.16 0 0\nO -1.16 0 0", "xyz");
+                    viewer.addUnitCell();
+                    viewer.setStyle({}, {sphere : {}});
+                    viewer.zoomTo();
+                    viewer.render();
+                  });
+                </script>
+              </div>
+            </td>
+          </tr>
         </table>
-
-        <div style="position: relative; width: 50%; height: 200px; display: flex; justify-content: center; align-items: center;" id="container-01" class="mol-container">
-          <script>
-            $(function() {
-              let element = $('#container-01');
-              let config = { backgroundColor : 'white' };
-              let viewer = $3Dmol.createViewer( element, config );
-              viewer.addModel("3\n\nC 0 0 0\nO 1.16 0 0\nO -1.16 0 0", "xyz");
-              viewer.addUnitCell();
-              viewer.setStyle({}, {sphere : {}});
-              viewer.zoomTo();
-              viewer.render();
-            });
-          </script>
-        </div>
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
