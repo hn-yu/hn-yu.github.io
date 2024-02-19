@@ -3,14 +3,14 @@
 
 <head>
   <title>{{ site.name }}</title>
-
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,8 @@
               <h1>
                 Haonan Yu <span style="white-space: nowrap;">于昊男</span>
               </h1>
-              <p>I am a incoming PhD student at the <a href="https://mp.weixin.qq.com/s/msPInc6Wlu6436RMhdY9fw">Center of Clean and Low-carbon Energy</a>, part of the <a href="https://energy.csu.edu.cn/">School of Energy Science and Engineering</a> at <a href="https://en.csu.edu.cn/">Central South University, China</a>, where I work on Matter Modeling and Machine Learning for Catalysis. My PhD advisors are <a href="https://faculty.csu.edu.cn/sunzhiqiang/en/index.htm">Zhiqiang Sun</a> and <a href="https://faculty.csu.edu.cn/liuhanzi/en/index.htm">Hanzi Liu</a>.
+              <p>
+                I am a incoming PhD student at the <a href="https://mp.weixin.qq.com/s/msPInc6Wlu6436RMhdY9fw">Center of Clean and Low-carbon Energy</a>, part of the <a href="https://energy.csu.edu.cn/">School of Energy Science and Engineering</a> at <a href="https://en.csu.edu.cn/">Central South University, China</a>, where I work on Matter Modeling and Machine Learning for Catalysis. My PhD advisors are <a href="https://faculty.csu.edu.cn/sunzhiqiang/en/index.htm">Zhiqiang Sun</a> and <a href="https://faculty.csu.edu.cn/liuhanzi/en/index.htm">Hanzi Liu</a>.
               </p>
               <p>
                 I have an MS in Computer Science (AI focus) from <a href="https://www.uow.edu.au">University of Wollongong</a> and a BS in Computer Science from <a href="https://www.hlju.edu.cn/">Heilongjiang University</a>.
@@ -95,6 +96,23 @@
           {% endfor %}
           {% endfor %}
         </table> -->
+        <br>
+        <br>
+        <br>
+
+        <div id="container-01" class="mol-container"></div>
+        <script>
+          $(function() {
+            let element = $('#container-01');
+            let config = { backgroundColor : 'white' };
+            let viewer = $3Dmol.createViewer( element, config );
+            viewer.addModel("3\n\nC 0 0 0\nO 1.16 0 0\nO -1.16 0 0", "xyz");
+            viewer.addUnitCell();
+            viewer.setStyle({}, {sphere : {}});
+            viewer.zoomTo();
+            viewer.render();
+          });
+          </script>
         <br>
         <br>
         <br>
