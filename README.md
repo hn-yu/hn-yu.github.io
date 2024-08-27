@@ -1,6 +1,6 @@
 ## Now
 
-Hi, I'm a PhD student at Central South University. 
+Hi, I'm a PhD student at Central South University.
 I build neural network to predict solid state material's property.
 
 ## News
