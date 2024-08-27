@@ -4,13 +4,12 @@ Recently I got a new laptop, so I install my old one with [Pop!_OS](https://pop.
 
 ## Intro
 
-Hi, I'm a PhD student at Central South University.
-I build neural network to predict solid state material's property.
-
-## Blog
-
-- [Blog1](https://github.com/hn-yu/hn-yu.github.io/issues/1)
+I'm a PhD student at Central South University. I build neural network to predict solid state material's property.
 
 ## News
 
 - I will serve as a reviewer of [AI4Mat-NeurIPS 2024](https://sites.google.com/view/ai4mat/home), thank you!
+
+## Blog
+
+- [Blog1](https://github.com/hn-yu/hn-yu.github.io/issues/1)
