@@ -10,4 +10,5 @@ Recently I got a new laptop, so I install my old one with [Pop!_OS](https://pop.
 
 ## Blog
 
-- [Blog1](https://github.com/hn-yu/hn-yu.github.io/issues/1)
+- [Github Issue Can Show the Blog](https://github.com/hn-yu/hn-yu.github.io/issues/1)
+
