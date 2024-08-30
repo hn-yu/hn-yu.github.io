@@ -2,6 +2,8 @@ I'm a PhD student at Central South University. I build neural network to predict
 
 ## Now
 
+I try to run mace-mp and check what it can do.
+
 Recently I got a new laptop, so I install my old one with [Pop!_OS](https://pop.system76.com/) And it works fine ;)
 
 ## News
